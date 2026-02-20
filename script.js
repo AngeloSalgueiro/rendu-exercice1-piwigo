@@ -21,7 +21,7 @@ for (let r = 0; r < rows; r++) {
         circle.style.zIndex = "2";
         circle.style.position = "absolute"
 
-        const size = Math.floor((Math.random() * 75) + 1);
+        const size = Math.floor((Math.random() * 60) + 1);
         circle.style.width = size + "px";
         circle.style.height = size + "px";
 

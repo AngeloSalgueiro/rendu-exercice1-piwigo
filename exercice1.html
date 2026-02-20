@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Exo 1</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="info">
-                    <p class="title">
-                        PHP versions againts plugin revision among xxxx installations
-                    </p>
-                    <p>
-                        Ces informations sont issues des statistiques anonymes récoltées auprès des installations de Piwigo. Elles donnent un indice sur la compatibilité
-                        avec la v de PHP sans en être une garantie. 
-                    </p>
-                </div>
-                <div class="graph">
 
-                </div>
+<head>
+    <title>Exo 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="info">
+                <p class="title">
+                    PHP versions againts plugin revision among xxxx installations
+                </p>
+                <p>
+                    Ces informations sont issues des statistiques anonymes récoltées auprès des installations de Piwigo.
+                    Elles donnent un indice sur la compatibilité
+                    avec la v de PHP sans en être une garantie.
+                </p>
+            </div>
+            <div class="graph">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="name"></th>
+                            
+                            <th>12.1</th>
+
+                            <th>11.4</th>
+
+                            <th>11.3</th>
+
+                            <th>11.2</th>
+
+                            <th>11.1</th>
+
+                            <th>10.4</th>
+
+                            <th>10.3</th>
+
+                            <th>10.2</th>
+
+                            <th>10.1</th>
+
+                            <th>9.2</th>
+
+                            <th>9.1</th>
+                        </tr>
+                    </thead>
+                    <tbody id="grid"></tbody>
+                </table>
+                <script src="script.js"></script>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -20,7 +20,6 @@ for (let r = 0; r < rows; r++) {
         circle.style.borderRadius = "50%";
         circle.style.zIndex = "2";
         circle.style.position = "absolute"
-        circle.title = "xxxxx installations"
 
         const size = Math.floor((Math.random() * 75) + 1);
         circle.style.width = size + "px";
@@ -35,8 +34,12 @@ for (let r = 0; r < rows; r++) {
             circle.style.backgroundColor = "rgba(255, 149, 62, 1)";
         }
         
+        const label = document.createElement("div");
+        label.className = "label"
+        label.textContent = "xxxxx installations"
 
         td.appendChild(circle);
+        td.appendChild(label);
         tr.appendChild(td);
     }
 

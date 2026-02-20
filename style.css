@@ -96,7 +96,6 @@ th {
 .label {
     position: absolute;
     top: 100%;
-    /* place above the circle */
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(40, 40, 40, 0.9);
@@ -116,7 +115,6 @@ th {
     pointer-events: auto;
 }
 
-/* Optional: small arrow under the label */
 .label::after {
     content: "";
     position: absolute;

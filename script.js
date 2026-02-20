@@ -6,7 +6,7 @@ const table = document.getElementById("grid");
 
 for (let r = 0; r < rows; r++) {
     const tr = document.createElement("tr");
-    
+
     const td = document.createElement("td");
     td.textContent = names[r]
     td.className = "name"
@@ -17,12 +17,24 @@ for (let r = 0; r < rows; r++) {
         td.className = "grid";
 
         const circle = document.createElement("div");
-        circle.style.width = r * c + "px";
-        circle.style.height = r * c + "px";
-        circle.style.backgroundColor = "orange";
         circle.style.borderRadius = "50%";
         circle.style.zIndex = "2";
         circle.style.position = "absolute"
+        circle.title = "xxxxx installations"
+
+        const size = Math.floor((Math.random() * 75) + 1);
+        circle.style.width = size + "px";
+        circle.style.height = size + "px";
+
+        if (size <= 15) {
+            circle.style.backgroundColor = "rgb(245, 245, 245)";
+        } else if (size < 50){
+            circle.style.opacity = "50%"
+            circle.style.backgroundColor = "rgba(255, 149, 62, 1)";
+        } else{
+            circle.style.backgroundColor = "rgba(255, 149, 62, 1)";
+        }
+        
 
         td.appendChild(circle);
         tr.appendChild(td);

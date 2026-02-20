@@ -2,3 +2,4 @@
 
 Rendu du petit exercice qui demandait de créer une grille avec cercle de taille aléatoire.
 
+![rendu](ex.png)
